@@ -1,5 +1,4 @@
 require "Unirest"
+require "pp"
 
-products = Unirest.get("http://localhost:3000/all_products").body
-
-p products
+pp Unirest.get("http://localhost:3000/all_products").body
